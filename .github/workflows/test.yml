@@ -14,6 +14,9 @@ jobs:
         include:
         - { os: windows-latest , ruby: mingw }
         - { os: windows-latest , ruby: mswin }
+        - { os: macos-latest , ruby: truffleruby-head }
+        - { os: ubuntu-latest , ruby: truffleruby-head }
+        
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
